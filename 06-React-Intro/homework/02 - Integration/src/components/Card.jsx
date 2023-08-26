@@ -1,11 +1,11 @@
-const Card = ({characters}) => {
+const Card = ({characters, onClose}) => {
    return (
       <>
          {
             characters.map(character => {
                return (
                   <div key={character.id}>
-                     <button onClick={character.onClose}>X</button>
+                     <button onClick={onClose}>X</button>
                      <h2>{character.name}</h2>
                      <h2>{character.status}</h2>
                      <h2>{character.species}</h2>

@@ -3,7 +3,7 @@ import Card from './Card';
 const Cards = ({characters}) => {
    return (
       <div>
-         <Card characters={characters} />
+         <Card characters={characters} onClose={() => window.alert('Emulamos que se cierra la card')} />
       </div>
    )
 }
