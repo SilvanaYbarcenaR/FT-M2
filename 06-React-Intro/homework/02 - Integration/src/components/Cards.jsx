@@ -1,5 +1,11 @@
 import Card from './Card';
 
-export default function Cards(props) {
-   return <div></div>;
+const Cards = ({characters}) => {
+   return (
+      <div>
+         <Card characters={characters} />
+      </div>
+   )
 }
+
+export default Cards;
